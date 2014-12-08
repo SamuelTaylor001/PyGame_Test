@@ -1,3 +1,7 @@
+#PLEASE READ
+#The purpose of this file is to act as a framework for the actual project
+#The file will later be split in to sections
+#Please feel free to create your own classes but ONLY call your classes within the game loop
 import pygame
 
 #initializes all of the pygame modules
@@ -27,6 +31,7 @@ def exit_game(exit_event):
             return True
 
 #gameloop
+
 while not gameExit:
     for event in pygame.event.get():
         gameExit = exit_game(event)
